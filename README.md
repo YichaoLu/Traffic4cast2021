@@ -36,6 +36,8 @@ After cloning this [repo](git@github.com:YichaoLu/Traffic4cast2021.git), downloa
 
 ## Usage
 
+To create a submission for the [Core Challenge](https://www.iarai.ac.at/traffic4cast/competitions/t4c-2021-core-temporal/?leaderboard), run
+
 ```
 cd core_competition
 python inference_v1.py --submission_name model_v1 --checkpoint_path ../model/v1_epoch_5.bin
@@ -49,6 +51,23 @@ python inference_v8.py --submission_name model_v8 --checkpoint_path ../model/v8_
 python inference_v9.py --submission_name model_v9 --checkpoint_path ../model/v9_epoch_5.bin
 python submission.py
 ```
+
+This creates a submission file named `core_submission.zip` under the `submission` folder.
+
+To create a submission for the [Extended Challenge](https://www.iarai.ac.at/traffic4cast/competitions/t4c-2021-extended-spatiotemporal/?leaderboard), run
+
+```
+python inference.py --submission_name extended_model_v1 --checkpoint_path ../model/model_1.bin
+python inference.py --submission_name extended_model_v2 --checkpoint_path ../model/model_2.bin
+python inference.py --submission_name extended_model_v3 --checkpoint_path ../model/model_3.bin
+python inference.py --submission_name extended_model_v4 --checkpoint_path ../model/model_4.bin
+python inference.py --submission_name extended_model_v5 --checkpoint_path ../model/model_5.bin
+python inference.py --submission_name extended_model_v6 --checkpoint_path ../model/model_6.bin
+python inference.py --submission_name extended_model_v7 --checkpoint_path ../model/model_7.bin
+python submission.py
+```
+
+This creates a submission file named `extended_submission.zip` under the `submission` folder.
 
 ## Acknowledgements
 This repository is based on [NeurIPS2021-traffic4cast](https://github.com/iarai/NeurIPS2021-traffic4cast) from [the Institute of Advanced Research in Artificial Intelligence (IARAI)](http://www.iarai.ac.at).
