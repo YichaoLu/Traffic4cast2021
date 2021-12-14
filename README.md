@@ -71,3 +71,13 @@ This creates a submission file named `extended_submission.zip` under the `submis
 
 ## Acknowledgements
 This repository is based on [NeurIPS2021-traffic4cast](https://github.com/iarai/NeurIPS2021-traffic4cast) from [the Institute of Advanced Research in Artificial Intelligence (IARAI)](http://www.iarai.ac.at).
+
+If you find this repository useful, please considering citing:
+```
+@article{lu2021learning,
+  title={Learning to Transfer for Traffic Forecasting via Multi-task Learning},
+  author={Lu, Yichao},
+  journal={arXiv preprint arXiv:2111.15542},
+  year={2021}
+}
+```
